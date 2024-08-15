@@ -48,8 +48,8 @@ function render(variables = {}) {
           <ul class="position-right">
             <li><a href="https://x.com/" + ${twitter}><i class="fab fa-twitter"></i></a></li>
             <li><a href="https://github.com/" + ${github}><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/" ${linkedin}><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com/" ${instagram}><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/" + ${linkedin}><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/" + ${instagram}><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
