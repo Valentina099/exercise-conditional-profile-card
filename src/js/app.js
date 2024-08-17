@@ -33,7 +33,8 @@ function render(variables = {}) {
   let city = variables.city == null ? "Miami" : variables.city;
   let country = variables.country == null ? ",USA" : variables.country;
   let role = variables.role == null ? "Web Developer" : variables.role;
-  let twitter = variables.twitter == null ? " " : variables.twitter + variables;
+  let twitter =
+    variables.twitter == null ? " " : variables.twitter + variables.twitter;
   let github = variables.github == null ? " " : variables.github;
   let linkedin = variables.linkedin == null ? " " : variables.linkedin;
   let instagram = variables.instagram == null ? " " : variables.instagram;
@@ -46,10 +47,10 @@ function render(variables = {}) {
           <h2>${role}</h2>
           <h3>${city} ${country}</h3>
           <ul class="position-right">
-            <li><a href="https://x.com/" + ${twitter}><i class="fab fa-twitter"></i></a></li>
-            <li><a href="https://github.com/" + ${github}><i class="fab fa-github"></i></a></li>
-            <li><a href="https://www.linkedin.com/" + ${linkedin}><i class="fab fa-linkedin"></i></a></li>
-            <li><a href="https://www.instagram.com/" + ${instagram}><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://x.com/${twitter}" ><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://github.com/${github}"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/${linkedin}"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://www.instagram.com/${instagram}"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
     `;
